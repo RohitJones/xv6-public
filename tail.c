@@ -61,8 +61,9 @@ int main (int argc, char *argv[]) {
     int fd, i, numfiles = 1, numlines = 10;
 
     if (argc <= 1) {
-        printf(1, "Usage: %s filename\n", argv[0]);
-        exit();
+        //printf(1, "Usage: %s filename\n", argv[0]);
+        tail(0, numlines);
+	exit();
     }
 
     if (argc > 2) {
